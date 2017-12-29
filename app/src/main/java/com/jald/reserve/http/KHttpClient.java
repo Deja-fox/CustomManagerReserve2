@@ -54,10 +54,10 @@ public class KHttpClient {
         String url = KHttpAdress.URLS[operation];
         int level = KHttpAdress.LEVELS[operation];
         callBack.setDecryptInfo(new ResponseDecryptInfo(operation, userToken));
-
-        Log.e(TAG, "请求地址:" + url);
+        //测试一下
+        Log.e(TAG, "请求地址：" + url);
         try {
-            Log.e(TAG, "请求数据:" + contentBean);
+            Log.e(TAG, "请求数据：" + contentBean);
             String sendJson = BusinessEncryptUtil.makeSendJson(level, contentBean, userToken);
             doPostData(context, url, sendJson, callBack);
         } catch (GeneralSecurityException e) {
