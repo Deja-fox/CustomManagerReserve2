@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:minHeight="35dp" >
+
+    <ImageView
+        android:id="@+id/bank_logo"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/bank_name"
+        android:layout_toStartOf="@+id/bank_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/bank_01000000" />
+
+    <TextView
+        android:id="@+id/bank_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:drawableEnd="@drawable/icon_arrows_r"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/icon_arrows_r"
+        android:gravity="center_vertical|end"
+        android:singleLine="true"
+        android:text="银行名称"
+        android:textColor="@color/text_secondary"
+        android:textSize="16sp" />
+
+</RelativeLayout>

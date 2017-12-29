@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:minHeight="65dp"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/checkbox_container"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:id="@+id/canpay_checkbox"
+            android:layout_width="30dp"
+            android:enabled="false"
+            android:layout_height="30dp"
+            android:background="@drawable/checkbox_bg_selector_blue"
+            android:button="@null"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/violation_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawableEnd="@drawable/icon_arrows_r"
+        android:drawablePadding="15dp"
+        android:drawableRight="@drawable/icon_arrows_r"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:minHeight="56dp"
+        android:paddingBottom="15dp"
+        android:paddingEnd="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:paddingStart="10dp"
+        android:paddingTop="15dp"
+        android:text=""
+        android:textSize="16sp" />
+
+</LinearLayout>

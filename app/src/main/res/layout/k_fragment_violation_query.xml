@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@android:color/white"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp" >
+
+        <TextView
+            android:id="@+id/label_car_palate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="车牌号"
+            android:textColor="@color/text"
+            android:textSize="16sp"
+            android:width="90dp" />
+
+        <EditText
+            android:id="@+id/car_palate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/label_car_palate"
+            android:layout_toRightOf="@+id/label_car_palate"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:hint="请输入车牌号"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#BBB" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@android:color/white"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp" >
+
+        <TextView
+            android:id="@+id/label_car_type"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="车辆类型"
+            android:textColor="@color/text"
+            android:textSize="15sp"
+            android:width="90dp" />
+
+        <Spinner
+            android:id="@+id/car_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/label_car_type"
+            android:layout_toRightOf="@+id/label_car_type"
+            android:background="@android:color/transparent" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#BBB" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@android:color/white"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp" >
+
+        <TextView
+            android:id="@+id/label_owner_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="车主姓名"
+            android:textColor="@color/text"
+            android:textSize="16sp"
+            android:width="90dp" />
+
+        <EditText
+            android:id="@+id/owner_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/label_owner_name"
+            android:layout_toRightOf="@+id/label_owner_name"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:hint="请输入车主姓名"
+            android:maxLength="15"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#BBB" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@android:color/white"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp" >
+
+        <TextView
+            android:id="@+id/label_engine_no"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="发动机号"
+            android:textColor="@color/text"
+            android:textSize="16sp"
+            android:width="90dp" />
+
+        <EditText
+            android:id="@+id/engine_no"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/label_engine_no"
+            android:layout_toRightOf="@+id/label_engine_no"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:hint="后四位"
+            android:maxLength="4"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#BBB" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@android:color/white"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp" >
+
+        <TextView
+            android:id="@+id/label_voiture_no"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="车架编号"
+            android:textColor="@color/text"
+            android:textSize="16sp"
+            android:width="90dp" />
+
+        <EditText
+            android:id="@+id/voiture_no"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/label_voiture_no"
+            android:layout_toRightOf="@+id/label_voiture_no"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:hint="后六位"
+            android:maxLength="6"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#BBB" />
+
+    <Button
+        android:id="@+id/btn_query_submit"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_light_blue_selector_corner"
+        android:gravity="center"
+        android:text="查询"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

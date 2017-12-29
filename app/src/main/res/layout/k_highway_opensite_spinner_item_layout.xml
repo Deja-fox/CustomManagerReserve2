@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/opensite_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:drawableEnd="@drawable/icon_arrows_r"
+    android:drawableRight="@drawable/icon_arrows_r"
+    android:ellipsize="marquee"
+    android:gravity="center_vertical"
+    android:paddingEnd="20dp"
+    android:paddingRight="20dp"
+    android:singleLine="true"
+    android:text="请选择开户网点"
+    android:textColor="@color/text_secondary" />

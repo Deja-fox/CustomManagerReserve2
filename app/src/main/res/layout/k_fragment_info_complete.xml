@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_info" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="请填写您的身份证号"
+            android:textColor="#444"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/info_complete_identify_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_border_edittext_bg"
+        android:drawablePadding="10dp"
+        android:hint="请填写您的身份证号"
+        android:inputType="text"
+        android:maxLength="20"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/dark_red_text_color"
+        android:textColorHint="#AAA"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_info" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="请填写您的真实姓名"
+            android:textColor="#444"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/info_complete_realname_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/round_border_edittext_bg"
+        android:drawablePadding="10dp"
+        android:hint="请填写您的真实姓名"
+        android:inputType="text"
+        android:maxLength="25"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/dark_red_text_color"
+        android:textColorHint="#AAA"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_info" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="请设置您的支付密码"
+            android:textColor="#444"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/info_complete_paypwd_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_border_edittext_bg"
+        android:drawablePadding="10dp"
+        android:hint="请输入支付密码"
+        android:inputType="textPassword"
+        android:maxLength="15"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/dark_red_text_color"
+        android:textColorHint="#AAA"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/info_complete_repaypwd_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/round_border_edittext_bg"
+        android:drawablePadding="10dp"
+        android:hint="请再次输入支付密码"
+        android:inputType="textPassword"
+        android:maxLength="15"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/dark_red_text_color"
+        android:textColorHint="#AAA"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal" >
+
+        <requestFocus />
+
+        <Button
+            android:id="@+id/info_complete_submit_btn"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_light_blue_selector_corner"
+            android:gravity="center"
+            android:text="提    交"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#20FFFFFF"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/login_loginname_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_trans_border_gray"
+            android:drawableLeft="@drawable/icon_human"
+            android:drawablePadding="22dp"
+            android:drawableStart="@drawable/icon_human"
+            android:hint="手机号/用户名/专卖证号"
+            android:inputType="text"
+            android:maxLength="50"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/dark_red_text_color"
+            android:textColorHint="#AAA"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/login_password_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_trans_border_gray"
+            android:drawableLeft="@drawable/icon_lock"
+            android:drawablePadding="25dp"
+            android:drawableStart="@drawable/icon_lock"
+            android:gravity="center_vertical"
+            android:hint="登录密码"
+            android:inputType="textPassword"
+            android:maxLength="25"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:singleLine="true"
+            android:textColor="@color/dark_red_text_color"
+            android:textColorHint="#AAA"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_light_blue_selector_corner"
+            android:gravity="center"
+            android:text="登  录"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnFrogetPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="end"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:gravity="center_vertical|end"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="20dp"
+        android:text="忘记密码?"
+        android:textColor="@color/text"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/bg_white_border_trans"
+        android:gravity="center"
+        android:paddingEnd="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="注册"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:textColor="@drawable/font_color_red_white_selector"
+        android:textSize="14sp" />
+
+</RelativeLayout>

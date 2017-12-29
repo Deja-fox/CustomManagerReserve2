@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+    <!--Tab选项卡-->
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        app:divider="@drawable/shape_divider_gray_vertical"
+        app:showDividers="middle">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tabTobaccoOrder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="烟草订单"
+                android:textColor="@color/selector_color_gray_select_blue"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tabYoumktOrder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="优市网订单"
+                android:textColor="@color/selector_color_gray_select_blue"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#AAAAAA" />
+
+    <!--优市网订单列表页-->
+    <LinearLayout
+        android:id="@+id/tabContentYoumktOrderContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.jald.reserve.widget.pullrefresh.RefreshableListViewWrapper
+            android:id="@+id/youmktOrderList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+    <!--烟草历史订单列表页-->
+    <LinearLayout
+        android:id="@+id/tabContentTobaccoOrderContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EEE"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@android:color/white"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:width="90dp"
+                android:gravity="center_vertical"
+                android:text="开始日期"
+                android:textColor="@color/text"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/begin_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@android:color/transparent"
+                android:drawableEnd="@drawable/icon_arrows_r"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/icon_arrows_r"
+                android:editable="false"
+                android:gravity="center_vertical|end"
+                android:hint="点击选择开始日期"
+                android:singleLine="true"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#BBB" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@android:color/white"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:width="90dp"
+                android:gravity="center_vertical"
+                android:text="结束日期"
+                android:textColor="@color/text"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/end_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@android:color/transparent"
+                android:drawableEnd="@drawable/icon_arrows_r"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/icon_arrows_r"
+                android:editable="false"
+                android:gravity="center_vertical|end"
+                android:hint="点击选择结束日期"
+                android:singleLine="true"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#BBB" />
+
+        <ListView
+            android:id="@id/bill_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:cacheColorHint="@android:color/transparent"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/gray_bg_selector"
+            android:overScrollMode="never" />
+
+        <LinearLayout
+            android:id="@+id/summary_container"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="#BB000000"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingStart="15dp">
+
+            <TextView
+                android:id="@+id/total_order_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#FFF" />
+
+            <TextView
+                android:id="@+id/total_order_amt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:text=""
+                android:textColor="#FFF" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

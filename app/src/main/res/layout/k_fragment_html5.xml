@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_full"
+    android:orientation="vertical" >
+
+    <com.jald.reserve.widget.ProgressWebView
+        android:id="@+id/webview"
+        style="@style/layout_full"
+        android:background="@android:color/white"
+        android:overScrollMode="never" />
+
+</LinearLayout>

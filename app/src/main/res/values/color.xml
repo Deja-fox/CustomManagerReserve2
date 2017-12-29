@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 常用颜色 -->
+    <color name="gary">#727171</color>
+    <color name="light_gary">#DDD</color>
+    <color name="light_gary2">#40888888</color>
+    <color name="red">#E32529</color>
+    <color name="dark_red">#DC5356</color>
+    <color name="drak_red2">#F05857</color>
+    <color name="drak_red3">#C05857</color>
+    <color name="green">#21a02d</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+    <!-- 全局控件色 -->
+    <color name="main_bg">#fefefc</color>
+    <color name="light_gray">#eee</color>
+    <color name="text">#595757</color>
+    <color name="text_secondary">#757575</color>
+    <color name="line">#c9c9c9</color>
+    <color name="gay_text">#595757</color>
+    <color name="light_green">#22C5A8</color>
+    <color name="dark_red_text_color">#8f201f</color>
+
+    <!-- 提示框 -->
+    <color name="alert_bg_p">#b33938</color>
+    <color name="list_line">#dcdcda</color>
+
+    <!-- 主色调浅蓝色 -->
+    <color name="theme_light_blue">#45b3ff</color>
+    <color name="theme_light_blue_dark">#378ecc</color>
+    <color name="btn_light_blue_n">#45b3ff</color>
+    <color name="btn_light_blue_p">#378ecc</color>
+    <!-- 其他 -->
+    <color name="province_line_border">#C7C7C7</color>
+
+    <!-- 文字颜色1 -->
+    <color name="btn_font_color">#686868</color>
+
+</resources>

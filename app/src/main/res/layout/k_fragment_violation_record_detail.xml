@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:gravity="center_vertical"
+                android:text="流水号"
+                android:textColor="@color/text"
+                android:textSize="15sp"
+                android:width="90dp" />
+
+            <TextView
+                android:id="@+id/temp_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|end"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:text="无"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#AAA" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:minHeight="40dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:gravity="center_vertical"
+                android:text="违章条例"
+                android:textColor="@color/text"
+                android:textSize="15sp"
+                android:width="90dp" />
+
+            <TextView
+                android:id="@+id/regulation_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|end"
+                android:paddingBottom="15dp"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp"
+                android:text="无"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#AAA" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:gravity="center_vertical"
+                android:text="罚款金额"
+                android:textColor="@color/text"
+                android:textSize="15sp"
+                android:width="90dp" />
+
+            <TextView
+                android:id="@+id/fine_amount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|end"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:text="无"
+                android:textColor="#FF0000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#AAA" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:gravity="center_vertical"
+                android:text="代办费"
+                android:textColor="@color/text"
+                android:textSize="15sp"
+                android:width="90dp" />
+
+            <TextView
+                android:id="@+id/pay_charge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|end"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:text="无"
+                android:textColor="#FF0000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#AAA" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:gravity="center_vertical"
+                android:text="滞纳金"
+                android:textColor="@color/text"
+                android:textSize="15sp"
+                android:width="90dp" />
+
+            <TextView
+                android:id="@+id/special_charge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|end"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:text="无"
+                android:textColor="#FF0000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#AAA" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:gravity="center_vertical"
+                android:text="扣分"
+                android:textColor="@color/text"
+                android:textSize="15sp"
+                android:width="90dp" />
+
+            <TextView
+                android:id="@+id/porint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|end"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:text="无"
+                android:textColor="#FFA500"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#AAA" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:gravity="center_vertical"
+                android:text="处罚单号"
+                android:textColor="@color/text"
+                android:textSize="15sp"
+                android:width="90dp" />
+
+            <TextView
+                android:id="@+id/violation_sn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|end"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:text="无"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#AAA" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:gravity="center_vertical"
+                android:text="违章时间"
+                android:textColor="@color/text"
+                android:textSize="15sp"
+                android:width="90dp" />
+
+            <TextView
+                android:id="@+id/violation_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|end"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:text="无"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#AAA" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:gravity="center_vertical"
+                android:text="违章地点"
+                android:textColor="@color/text"
+                android:textSize="15sp"
+                android:width="90dp" />
+
+            <TextView
+                android:id="@+id/violation_road"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|end"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:text="无"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#AAA" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:gravity="center_vertical"
+                android:text="办理周期"
+                android:textColor="@color/text"
+                android:textSize="15sp"
+                android:width="90dp" />
+
+            <TextView
+                android:id="@+id/needdays"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|end"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:text="无"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#AAA" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:gravity="center_vertical"
+                android:text="执法机关"
+                android:textColor="@color/text"
+                android:textSize="15sp"
+                android:width="90dp" />
+
+            <TextView
+                android:id="@+id/authority"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|end"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:text="无"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#AAA" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:gravity="center_vertical"
+                android:text="办理地址"
+                android:textColor="@color/text"
+                android:textSize="15sp"
+                android:width="90dp" />
+
+            <TextView
+                android:id="@+id/dealaddress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|end"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:text="无"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#AAA" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:gravity="center_vertical"
+                android:text="是否现场单"
+                android:textColor="@color/text"
+                android:textSize="15sp"
+                android:width="90dp" />
+
+            <TextView
+                android:id="@+id/is_on_site_single"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|end"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:text="无"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#AAA" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:gravity="center_vertical"
+                android:text="错误信息"
+                android:textColor="@color/text"
+                android:textSize="15sp"
+                android:width="90dp" />
+
+            <TextView
+                android:id="@+id/errror_msg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|end"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:text="无"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#AAA" />
+    </LinearLayout>
+
+</ScrollView>

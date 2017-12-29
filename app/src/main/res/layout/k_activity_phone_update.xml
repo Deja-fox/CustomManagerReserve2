@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/theme_light_blue" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/layout_full"
+            android:gravity="center"
+            android:text="@string/change_the_mobile_phone_number_to_bind"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_phohe_update_return"
+            style="@style/layout_wrap"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            android:background="@drawable/btn_return" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/phone_number_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_border_edittext_bg"
+        android:drawablePadding="10dp"
+        android:hint="@string/please_enter_the_mobile_phone_number_change"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/dark_red_text_color"
+        android:textColorHint="#AAA"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/smscode_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_border_edittext_bg"
+            android:drawablePadding="10dp"
+            android:hint="@string/please_enter_the_sms_verification_code"
+            android:inputType="number"
+            android:maxLength="6"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/dark_red_text_color"
+            android:textColorHint="#AAA"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/get_sms_code_btn"
+            android:layout_width="100dp"
+            android:layout_height="46dp"
+            android:layout_margin="10dp"
+            android:layout_weight="0"
+            android:background="@drawable/btn_light_blue_selector_corner"
+            android:gravity="center"
+            android:text="@string/get_sms_code"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/pay_pwd_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_border_edittext_bg"
+        android:drawablePadding="10dp"
+        android:hint="@string/please_enter_the_payment_password"
+        android:inputType="textPassword"
+        android:maxLength="50"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/dark_red_text_color"
+        android:textColorHint="#AAA"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_light_blue_selector_corner"
+        android:gravity="center"
+        android:text="@string/confirm"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

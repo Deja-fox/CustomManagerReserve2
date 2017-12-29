@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jald.reserve"
+    android:versionCode="12"
+    android:versionName="@string/version_name">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <!--扫描二维码权限-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--android.permission.VIBRATE允许访问震动权限-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--android.permission.FLASHLIGHT允许访问闪光灯的权限-->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 外部存储读权限，调试工具加载本地补丁需要 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".KBaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="5spcVDviu7h4bfwPQManCalGg6PDx3Lu" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="584f589bc895767d46000d45" />
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="b656ab98918cd635ccbdbb687b92cc31" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="youmkt" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.IDSECRET"
+            android:value="24545508-1" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.APPSECRET"
+            android:value="2aa727fba74c44a204d5ff9940564c27" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.RSASECRET"
+            android:value="MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCS2QAh5VGn/wlzSUOeqgGP4zq/ovz5GuNlYQhcoIU/r6m4CtM1Kb0hN/qth+hj3LD6/V1iitt4lygrX1hxlxfds+jHAzbYdoQK6NkfMdiOau8mDKEY2L9ArC/RaqE+y8TL4CSqWvEJvBEMK5mSj7x3Etore68Lkdv2eno+uhVruiaNXjPqKIZZcCI/UfMsEBjaLz6AgK6ictDvVwZGemeVyZgKZmrW48tpFUbQ9rtrVJLY++AJOnQW2WoQdVqRRKNkJbzHGEvAGKY7PAaxlZX6mzgA/777P49O/XrAarX2VVbaI2Afn9s/rRniVn5T3NObu2jGhFmDuqyDhNIKFZfxAgMBAAECggEAQv6DI/Ol5DnjSthS5DD1U3q8U699L/yHX7n8AZ4uDFcM2+z8XJW1NlF+qOqHKAAIMgmjMBDffc2gQuFVzUS8W6X3fcvGmsy/AucmHygzfw3kGvzKBjbkUhH8ItM9yxNVrhmNQLcKnoFRWbcOciHnPn+4Tvw3aNTbgEByQunMWf+5Sgq0KfHUShZEAqY8q9lb6HiUlxKBxmJuB10yZoQMnvVZI6Y6CdUKY3K3VQ5tkeZ0rbBdaBiTG/TeWqLktXwWsx7hjAwbb42qqRaLxG0oKd34BH9ZUaB1A4/17ftwWzChaNKUl5Fzuqe/V+McIKljxfoISDP3UwrhFPmGo0UQ/QKBgQDgSLvCxONINB5Aaj3i7ZclZUvrEfdsxtRB17lN0OPyI2FBOChXdIfdilUivpMgP5JH+XdZkl+92vpp9rVu8WHpbcWx30rNfXIDbIeQxBd82Ndv6O1vgM+6qHMuhnMqlO8/UFAjkJm4XpYsAG6TKAhpFooBvsorgSio74bhOWwjawKBgQCnnQEwZsv3YVgqe6T+DHgdLnOUpOewzHid0iht9mJqs4pJipdY84Vx+LOZZqshCZiBEgIjzqAM/Vvk2foC/vqNpsSOf3eaH+ENwmzOIHJWV7JZnMyJ+9SB8s/pl0HRe2b1zLIY8ohzI9g6giJhhPLm99eKVqjhMLXJHe6D1nGlEwKBgC901F3K4TiG5pvEnyGkGiYsf9rWa18V1xWzep8PgxvaBpsRMeAHZTQoMAlw/5qEOQSHsYw/X4jBi9jd/dfitU/6DSms0JwYXgaBcVHdXAbrrvIb/BlqzQl22SBQDJBHATSJXtuXnh8XzHi1ArCaeOUbgsoJv6di5eKRBB4l007PAoGAEFxN6miOTjZNQdBR2Y5kBw0qsP6rsuEygM0rrxgWoS2nOOhzP3Z9txM8jKOt3oquPSMB3Hblvn7Ygm0Yb0RuNndpxjMA/KVR9WLd9fzKzEzBFugsOue+5XRLARUHkqgF88YoODEsSnjcOVHMg1JT12Gnw1QUJe74P4pRZsL+0ssCgYEAx2wgQdSAKD+NeGVfYj0IULz5c+Yrrkgn1BERSn8l83KQlcGFjFHB+Av3uT9FlE2+pbEkWX+oWrlRWIYYb1LjOYXRhwLAkRIcKwMeK2wbdniZQBAvDX8Sqkg5utwp2SwiBUCsXUADD2ohbTKOrxAd7Hb9qa8/LcMwDevBfcK5lEY=" />
+
+        <activity
+            android:name=".ui.KSplashActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoTitleTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.KLoginPageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <!--客户经理订货相关开始-->
+        <activity
+            android:name=".extension.ui.KGoodsReserveActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".extension.ui.KCustomManagerMainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".extension.ui.KCustomDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".extension.ui.OrderDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!--客户经理订货相关结束-->
+
+        <activity
+            android:name=".ui.KFinancingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.KHtmlActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.KBillCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.KRegisterPageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.KMyBankCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.KAccountChargeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.KPhonefeeChargeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.KMainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.KLoginPwdUpdateActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.KPayPwdUpdateActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.KPhoneUpdateActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.KInfoCompleteActivity"
+            android:label="@string/title_activity_info_complete" />
+        <activity
+            android:name=".ui.KTrafficFineActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.KWaitToPayOrderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.KHistoryOrderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.KGoodsWarningListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".ui.KProxyAccountActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".ui.KNanYueEAccountMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ToolbarAppTheme"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".ui.KNanYueLoanPayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ToolbarAppTheme"
+            android:windowSoftInputMode="adjustPan" />
+
+
+        <activity
+            android:name=".ui.KWaitToReceiveOrderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".ui.KMapShowActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateHidden" />
+
+        <activity
+            android:name=".ui.KWaitToCommetOrderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+
+        <activity
+            android:name=".ui.KLocationSelectActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+
+        <activity
+            android:name=".ui.KBaiTiaoAndReachPayActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".ui.KForgetPwdActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".ui.KReserveGoodsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".extension.ui.BuildCustomRSActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".extension.ui.FuturesGoodsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".extension.ui.FuturesDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".extension.ui.FuturesListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".extension.ui.AgreementListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".extension.ui.AgreementDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".extension.ui.AgreementOrderListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".extension.ui.AgreementOrderDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".ui.ScannerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".ui.ScannerOrderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <service
+            android:name=".service.KDeamonService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="com.jald.daifupay.intent.StartDeamonService" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

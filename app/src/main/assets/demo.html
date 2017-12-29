@@ -1,0 +1,41 @@
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>
+        js调用java
+    </title>
+    <script>
+        function init(){
+			if (window.WebViewJavascriptBridge) {
+				callJava();
+			} else {
+				document.addEventListener(
+					'WebViewJavascriptBridgeReady'
+					, function() {
+					callJava();
+					},
+					false
+				);
+			}
+
+			function callJava(){
+			  //这里写调用java端代码的logic
+			  // 当南粤接口返回数据后调用java端
+				  WebViewJavascriptBridge.callHandler(
+					  'nanYueWebInterfaceCallback'
+					  ,encodeURIComponent('{"ret_cpde":"0000","ret_msg":"交易成功","content":"4xUvvuHjrCiDytnaSi2oH+h8kyEWzH6k","signature":"8dd114da1a050fb099298657a511266"}')
+					  , function(responseData) {
+						//responseData 是java端返回的结果
+						alert(responseData);
+					  }
+				  );
+			}
+        }
+
+    </script>
+</head>
+
+<body onload="init()">
+测试网页
+</body>
+</html>

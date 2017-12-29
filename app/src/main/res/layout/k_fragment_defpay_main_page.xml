@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.jald.reserve.widget.AdsView
+        android:id="@+id/top_ad_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EFEFEF"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#F17272"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="个人业务"
+                android:textColor="@android:color/white" />
+
+            <com.jald.reserve.widget.ExtendedGridView
+                android:id="@+id/menu_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:descendantFocusability="beforeDescendants"
+                android:listSelector="@drawable/gray_bg_selector"
+                android:numColumns="3"
+                android:overScrollMode="never"
+                android:paddingLeft="-1px"
+                android:paddingRight="-1px"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#F17272"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="代缴业务"
+                android:textColor="@android:color/white" />
+
+            <com.jald.reserve.widget.ExtendedGridView
+                android:id="@+id/menu_grid_proxy_funs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:descendantFocusability="beforeDescendants"
+                android:listSelector="@drawable/gray_bg_selector"
+                android:numColumns="3"
+                android:overScrollMode="never"
+                android:paddingLeft="-1px"
+                android:paddingRight="-1px"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

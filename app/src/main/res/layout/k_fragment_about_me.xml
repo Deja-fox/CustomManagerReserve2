@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_full"
+    android:background="@color/light_gray"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        style="@style/layout_full"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            style="@style/layout_height_wrap"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/top_pic"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/me_logo_bg" />
+
+            <TextView
+                style="@style/layout_height_wrap"
+                android:layout_alignParentBottom="true"
+                android:background="#6D000000"
+                android:gravity="right"
+                android:paddingBottom="3dp"
+                android:paddingRight="30dp"
+                android:paddingTop="3dp"
+                android:text="@string/version_name"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/layout_full"
+            android:background="@color/light_gray"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/change_the_mobile_phone_number_to_bind"
+                style="@style/layout_height_wrap"
+                android:background="@drawable/btn_activity_list"
+                android:drawableLeft="@drawable/me_btn_img_unbound"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/img_arrows"
+                android:gravity="left"
+                android:padding="17dp"
+                android:text="@string/change_the_mobile_phone_number_to_bind"
+                android:textColor="@color/text"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/line" />
+
+            <Button
+                android:id="@+id/me_btn_change_login_password"
+                style="@style/layout_height_wrap"
+                android:background="@drawable/btn_activity_list"
+                android:drawableLeft="@drawable/me_btn_img_change_password"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/img_arrows"
+                android:gravity="left"
+                android:padding="17dp"
+                android:text="@string/password_to_modify"
+                android:textColor="@color/text"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/line" />
+
+            <Button
+                android:id="@+id/me_btn_reset_password"
+                style="@style/layout_height_wrap"
+                android:background="@drawable/btn_activity_list"
+                android:drawableLeft="@drawable/me_btn_img_reset_password"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/img_arrows"
+                android:gravity="left"
+                android:padding="17dp"
+                android:text="@string/the_payment_password_to_modify"
+                android:textColor="@color/text"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/line" />
+
+            <Button
+                android:id="@+id/me_btn_update"
+                style="@style/layout_height_wrap"
+                android:background="@drawable/btn_activity_list"
+                android:drawableLeft="@drawable/me_btn_img_update"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/img_arrows"
+                android:gravity="left"
+                android:padding="17dp"
+                android:text="@string/system_update"
+                android:textColor="@color/text"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/line" />
+
+            <Button
+                android:id="@+id/me_btn_login_out"
+                style="@style/layout_height_wrap"
+                android:background="@drawable/btn_activity_list"
+                android:drawableLeft="@drawable/me_btn_img_login_out"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/img_arrows"
+                android:gravity="left"
+                android:padding="17dp"
+                android:text="@string/loginout"
+                android:textColor="@color/text"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="30dp"
+                android:background="@color/line" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
