@@ -54,6 +54,7 @@ public class KHttpClient {
         String url = KHttpAdress.URLS[operation];
         int level = KHttpAdress.LEVELS[operation];
         callBack.setDecryptInfo(new ResponseDecryptInfo(operation, userToken));
+        //测试pull更新一下
         Log.e(TAG, "请求地址：" + url);
         try {
             Log.e(TAG, "请求数据：" + contentBean);
